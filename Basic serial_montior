@@ -1,0 +1,16 @@
+/*
+Project: Serial Monitor Example
+Author: Rashmitha
+Description:
+This program prints a message on the Arduino Serial Monitor every second.
+*/
+
+void setup() {
+  Serial.begin(9600);      // Start serial communication at 9600 baud
+  Serial.println("Welcome to Arduino!");
+}
+
+void loop() {
+  Serial.println("Hello from Arduino!");
+  delay(1000);             // Wait for 1 second
+}
